@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   
+</head>
+<body>
+
+    <section class = "sub-header">
+        <nav >
+           <a href="index.html"><img src="img/logo-color-1.png" alt=""> </a>
+            
+            <div class="nav-links" id ="navLinks">
+                <i class="fas fa-times" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Courses.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact_us.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <section class="course">
+        <h1>Courses we Offer</h1>
+        <p>   MITAOE offers seven UG programs (B.Tech) and three PG programs (M.Tech). The comprehensive programs are offered across major engineering domains such as Chemical, Civil, Mechanical, Computer, Information Technology, Electronics and Electronics & Telecommunication .</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>BACHELOR OF TECHNOLOGY (B.TECH)</h3>
+                <p>   MITAOE offers full-time, undergraduate programs (B. Tech) in Chemical, Civil, Computer, Electronics, ENTC, IT and</p>
+            </div>
+            <div class="course-col">
+                <h3>MASTERS OF TECHNOLOGY (M.TECH)
+                </h3>
+                <p> Apart from B.Tech, MITAOE offers full-time, postgraduate programs (M. Tech) in Computer, Electronics and Mechanical Engineering.</p>
+               
+            </div>
+            <div class="course-col">
+                <h3>BACHELOR OF DESIGN</h3>
+                <p>MIT School of Design has been established as a fifth school in MITAOE campus, will induct the first batch of students from the academic year</p>
+            </div>
+        </div>
+
+    </section>
+
+    
+<!-- ----------Facilities------------- -->
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem alias architecto dicta maxime aliquam ut obcaecati atque sequi cupiditate. <br> as magnam voluptate veritatis. Iste sit ad est?</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="img/Library.jpg" alt="">
+            <h3>World Class Library</h3>
+            <p>The Central Library at MITAOE preserves and provides access to a rich, diverse and enduring source of knowledge to inform, inspire and engage users in user intellectual and creative initiatives. It provides access to information, services and opportunities that enable, enrich and boost the quality of life for all its users.
+                <br>
+                <br>
+                Ms. Vandana Khandelwal,
+                Librarian- (M. Lib. Sc.), UGC-NET ,
+                Email – vbkhandelwal@mitaoe.ac.in
+                Ph. No. : 020 30253610 Ext. : 1034.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="img/academics.jpg" alt="">
+            <h3>Best Academics</h3>
+            <p>It is indeed essential to focus on overall development of the students while they are learning Engineering. Budding entrepreneurs are groomed with courses on Entrepreneurship and in Entrepreneurship Center. Students soft skills and language skills are sharpened through various courses and hands-on practice.</p>
+        </div>
+        <div class="facilities-col">
+            <img class="canteen" src="img/canteen2.jpg" alt="">
+            <h3>Tasty and Healthy food</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti tempora blanditiis, illum similique, quia numquam expedita eligendi ut sequi itaque quisquam nam voluptates odit cum amet consectetur rem, excepturi placeat.</p>
+        </div>
+    </div>
+
+</section>
+               
+
+
+<!-------------  Footer-------------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Being the brainchild of its visionary founder, Prof. Vishwanath D. Karad, MAEER established in 1983, 
+        managed to craft a niche position for being a <br>one-of-its-kind undertaking that focuses on value-based education.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/MITAOEOfficial/" class="facebook" target="_blasnk"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/MITAOE" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCL4DWs9R4irwWUTFg8BYsOQ" class="youtube-play" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/mitacademyofengineering/" class="linkedin-square" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/mit-academy-of-engineering/" class="linkedin-square" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class=" fas fa-heart"></i> by Avnish Pathak </p>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+    
+</body>
+</html>

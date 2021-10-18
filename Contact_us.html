@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+   
+</head>
+<body>
+
+    <section class = "sub-header">
+        <nav >
+           <a href="index.html"><img src="img/logo-color-1.png" alt=""> </a>
+            
+            <div class="nav-links" id ="navLinks">
+                <i class="fas fa-times" onclick = "hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Courses.html">COURSE</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact_us.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+  
+<!-- ------------ Contact Us ------>
+
+<section class = " location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.752900618631!2d73.89055411439993!3d18.675081169305653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c880511d7c35%3A0xc4e495a8c1f663eb!2sMIT%20Academy%20of%20Engineering!5e0!3m2!1sen!2sin!4v1633688989243!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+<section class = "contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class = "fas fa-home"></i>
+                <span>
+                    <h5>Dehu Phata Alandi</h5>
+                    <p>Pune, Maharashtra</p>
+                </span>
+            </div>
+            <div>
+                <i class = "fas fa-phone"></i>
+                <span>
+                    <h5>+91-9071123436</h5>
+                    <p>Monday to Saturday,10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class = "fas fa-envelope"></i>
+                <span>
+                    <h5>admissions2021@mitaoe.ac.in</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form_handler.php" method="post">
+                <input type="text" name= "name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter email addresss" required>
+                <input type="text" name = "subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name = "message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send 
+                Message</button>
+            </form>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+
+<!-------------  Footer-------------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Being the brainchild of its visionary founder, Prof. Vishwanath D. Karad, MAEER established in 1983, 
+        managed to craft a niche position for being a <br>one-of-its-kind undertaking that focuses on value-based education.</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/MITAOEOfficial/" class="facebook" target="_blasnk"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/MITAOE" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UCL4DWs9R4irwWUTFg8BYsOQ" class="youtube-play" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/mitacademyofengineering/" class="linkedin-square" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/mit-academy-of-engineering/" class="linkedin-square" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class=" fas fa-heart"></i> by Avnish Pathak </p>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+    
+</body>
+</html>
